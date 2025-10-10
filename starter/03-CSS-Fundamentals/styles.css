@@ -1,5 +1,7 @@
 
 * {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -15,6 +17,11 @@ h1, h2, h3, h4 {
     color: #1098ad;
 }
 
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 26px;
     text-transform: uppercase;
@@ -23,10 +30,13 @@ h1 {
 
 h2 {
     font-size: 26px;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h4 {
@@ -38,10 +48,16 @@ h4 {
 p {
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 li {
     font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
 }
 
 footer p {
@@ -54,8 +70,7 @@ article header p {
 
 #author {
     font-style: italic;
-    font-size: 1
-    8px;
+    font-size: 18px;
 }
 
 #footer {
@@ -65,6 +80,12 @@ article header p {
 .related-author {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 5px;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
 }
 
 .related-posts-list {
@@ -73,12 +94,29 @@ article header p {
 
 .main-header {
     background-color: #f7f7f7;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+body {
+    border-top: 10px solid #1098ad;
 }
 
 aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
+    width: 500px;
+}
+
+article {
+    margin-bottom: 40px;
 }
 
 /* li:first-child {
@@ -90,16 +128,18 @@ li:nth-child(3) {
 } */
 
 /* Styling links */
-a:link {
+
+a:-webkit-any-link {
     color: #1098ad;
     text-decoration: none;
 }
 
-a:visited {
-    color: #a000ac;
+a:hover {
+    color: #085763;
+    text-decoration: underline;
 }
 
-a:hover {
-    color: #5e98a0;
-    text-decoration: underline;
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 15px;
 }
