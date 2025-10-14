@@ -143,3 +143,10 @@ ul, ol {
     margin-left: 50px;
     margin-bottom: 15px;
 }
+
+nav a:link {
+    background-color: orangered;
+    margin: 20px;
+
+    display: inline-block;
+}
